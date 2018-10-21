@@ -6,12 +6,48 @@ h2{
 table{
   border: 2px solid black;
   border-collapse: collapse;
+  align-items: center;
+  width: 50%;
 }
 
 th, td {
   border: 1px solid black;
+  align-items: center;
+  text-align: center;
 }
 
 th {
   background-color: lightgray;
+}
+
+.train_block{
+  background-color: blue;
+  font-weight: bold;
+}
+
+a{
+  color: hotpink;
+}
+a:hover{
+  color: yellow;
+}
+
+@media (max-width: 499px) {
+  body{
+      background-color: red;
+  }
+}
+
+.grid{
+  background-color: green;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item{
+  background-color: white;
+  font-size: 20px;
 }
